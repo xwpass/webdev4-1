@@ -1,0 +1,216 @@
+h1,h2,h3 {
+  color: #A3BA5F;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.container,
+.row {
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.a {
+  color:#FFF;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.navbar-fixed-top,
+.navbar-fixed-top ul {
+  background-color: #A3BA5F;
+  /*background-color:#5B7198;*/
+}
+
+.navbar-brand {
+  color:white;
+}
+
+
+
+.logo {
+  float: left;
+  margin-top: -5px;
+  width: 30px;
+}
+
+.nav {
+  background-color: white;
+}
+
+.nav > li > a{
+  color:white;
+}
+
+.nav > li > a:hover {
+  color: white;
+  background-color:#5B7198;
+}
+
+.headline h1,
+.headline h2 {
+  text-shadow: 5px 5px 5px #333;
+}
+
+
+.home-list {
+  list-style-type: none;
+}
+
+.home-list li img{
+  width: 70%;
+  box-shadow: 5px 5px 5px #888;
+}
+
+.user-thumb-link{
+  color:#3f8659;
+}
+
+.user-thumb-link:hover {
+  color: #4fe64e;
+}
+
+.user-thumb-list {
+
+  box-shadow: 5px 5px 5px #888;
+
+  margin: 10px 4%;
+  /*background-color: #bdf;*/
+
+}
+
+.user-thumb {
+  text-align: center;
+  display: inline-block;
+}
+
+.user-thumb img {
+  max-width: 147px;
+}
+
+.user-thumb ul {
+
+  list-style-type: none;
+
+}
+
+.user-thumb ul li {
+  float: left;
+  margin: 3px;
+  padding: 2px;
+
+  background: #DFE;
+  border: 1px solid #ADC;
+  border-radius: 12%;
+
+  color:#3A9;
+
+  text-align: center;
+}
+
+.profile-header {
+
+  background-color: #A3BA5F;
+
+}
+
+
+
+.profile-img{
+  width: 80%;
+  padding: 20px;
+}
+
+.profile-info {
+    padding: 20px;
+}
+
+.profile-info h2,
+.profile-info h3 {
+  color:#FFF;
+}
+
+.profile-info a {
+  color:#05650d;
+
+  font-weight: bold;
+}
+
+.profile-info ul {
+  list-style-type: none;
+}
+
+.profile-info ul li {
+  float: left;
+  margin: 5px;
+  padding: 2px 8px;
+
+  background-color: #d1fdb4;
+  color: #5B7198;
+  border-radius: 20%;
+}
+
+.btn a {
+  color: white;
+}
+
+footer {
+  text-align: center;
+}
+
+/*.h-banner {
+  background-color: yellow;
+  height: 200px;
+}
+
+.logo {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 50px;
+
+}
+
+.h-banner button {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 80%;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+
+}
+
+.jobs {
+  text-align: center;
+}
+
+footer{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.info-banner {
+  height: 400px;
+  background-color: red;
+}
+
+.profile {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 100px;
+  border-radius: 50%;
+}
+
+.form {
+  text-align: center;
+  margin-top: 15%;
+  font-size: 26px;
+}*/

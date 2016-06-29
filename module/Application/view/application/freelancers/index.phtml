@@ -1,0 +1,54 @@
+<!-- Page Content -->
+<?php
+   
+
+ ?>
+<div class="container">
+
+    <!-- Page Heading -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Freelancers
+                <!-- <small>Secondary Text</small> -->
+            </h1>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Project One -->
+    <div class="row freelancer-list">
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+
+
+
+<!-- /.container -->
+<script type="text/javascript">
+  //alert("wa!!!");
+  $.ajax({
+    url:"/freelancers/response",
+    type:"POST",
+    data:{"test":"test"},
+    success: function(resp){
+      var users = resp.users;
+
+      console.log(users);
+      for(var i=0; i<users.length; i++){
+        var skills ="<ul>";
+        for(var j=0;j<users[i].skills.length;j++){
+          skills +="<li>"+users[i].skills[j]+"</li>";
+        }
+        skills +="</ul>";
+        console.log(skills);
+
+        $(".freelancer-list").append(
+        "<a class=\" user-thumb-link \"href=\"profile?id="+users[i].id+"\"><div class=\"col-md-5 user-thumb-list\"><div class=\"col-sm-4 user-thumb\"><img src=\"/thumbs/user-thumbs/users-img ("+users[i].id+").png\" alt=\"\"></div><div class=\"col-sm-7 user-thumb\"><h3>"+users[i].name+"</h3>"+skills+"</div></div></a>");
+      }
+      //$("#sub_header").append(resp.test);
+    },
+  });
+
+</script>

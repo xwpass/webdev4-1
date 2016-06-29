@@ -1,0 +1,56 @@
+<br>
+<div class="container">
+
+  <div class="row profile-header">
+
+      <div class="col-md-5">
+        <img class="profile-img" src="/full/users/users_img (<?php echo $this->id ?>).png" alt="" />
+      </div>
+
+      <div class="col-md-7 profile-info">
+
+        <h2><?php echo $this->name; ?></h2>
+
+        <hr>
+
+        <h3>Contact</h3>
+        <a href="mailto:<?php echo $this->email; ?>"><?php echo $this->email; ?></a>
+
+        <hr>
+
+        <h3>Skills</h3>
+        <br>
+        <?php
+          echo "<ul>";
+          foreach($this->skills as $skill){
+            echo "<li>$skill</li>";
+          }
+          echo "</ul>";
+        ?>
+
+      </div>
+      <!-- /profile-info -->
+  </div>
+  <!-- /row -->
+  <hr>
+
+  <div class="row">
+
+  </div>
+
+    <h3>Desciption</h3>
+    <?php
+
+      $dir = "/description/users ($this->id).txt";
+
+      $fp=file($dir);
+
+      echo $fp[0];
+
+     ?>
+  <!-- /row -->
+  <hr>
+
+
+
+  <button type="button" class="btn btn-success"><a href="/freelancers">Back to list</a></button>
